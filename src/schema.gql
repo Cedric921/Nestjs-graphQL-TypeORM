@@ -20,3 +20,7 @@ type Query {
   getUserById(id: Int!): User
   getUsers: [User!]!
 }
+
+type Mutation {
+  createUser(username: String!, displayName: String): User!
+}
